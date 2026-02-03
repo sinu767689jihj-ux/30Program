@@ -1,16 +1,23 @@
-//Product Of the given number is Prime or Not
-class Product{
+class Main{
     public static void main(String[] args)
     {
-        int n=30;
-        int product=1;
-        for(int i=1;i<=n;i++)
+        int a=1;
+        int b=71;
+        int count=0;
+        int product=a*b;
+        for(int i=1;i<=product;i++)
         {
-            if(n%i==0)
+            if(product%i==0)
             {
-                product=product*i;
+                count++;
             }
         }
-       System.out.println(product);
+        if(count==2)
+        {
+            System.out.println("prime");
+        }else{
+            System.out.println("not prime");
+        }
     }
 }
+
