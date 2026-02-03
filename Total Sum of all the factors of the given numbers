@@ -1,0 +1,23 @@
+//Total Sum of all the factors of the given numbers
+class Sum{
+    public static void main(String[] args)
+    {
+        int a=1;
+        int b=71;
+        int count=0;
+        int product=a*b;
+        for(int i=1;i<=product;i++)
+        {
+            if(product%i==0)
+            {
+                count++;
+            }
+        }
+        if(count==2)
+        {
+            System.out.println("prime");
+        }else{
+            System.out.println("not prime");
+        }
+    }
+}
