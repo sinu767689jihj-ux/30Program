@@ -1,0 +1,13 @@
+class ExtractDigitsEvenDigits {
+    public static void main(String[] args){
+        int number=12365;
+        int digits;
+        while(number>0){
+            digits=number%10;
+            if(digits%2==0){
+                System.out.println(digits);
+            }
+            number=number/10;
+        }
+    }
+}
