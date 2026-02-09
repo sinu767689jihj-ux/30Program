@@ -1,0 +1,14 @@
+class FactorOfAllEvenDigits
+{
+    public static void main(String[] args)
+    {
+        int factor=36;
+        for(int i=1;i<=factor;i++)
+        {
+            if(factor%i==0&&i%2==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
