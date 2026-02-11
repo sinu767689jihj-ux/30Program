@@ -1,0 +1,18 @@
+class FactorialOfEachDigit{
+    public static void main(String[] args)
+    {
+        int num=623;
+        int digit;
+        int factorial=1;
+        while(num>0)
+        {
+            digit=num%10;
+            for(int i=1;i<=digit;i++)
+            {
+                factorial=factorial*i;
+            }
+            num=num/10;
+        }
+        System.out.println(factorial);
+    }
+}
