@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class FindExponenialValue
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter an Exponenial Value:");
+        int expValue=sc.nextInt();
+        System.out.println("Enter the base Value:");
+        int base=sc.nextInt();
+        System.out.println("Enter the Range:");
+        int range=sc.nextInt();
+        boolean found=false;
+        for(int i=0;i<=range;i++)
+        {
+            if(expValue==Math.pow(base,i))
+            {
+                found=true;
+                break;
+            }
+        }
+        if(found)
+        {
+            System.out.println("Found");
+        }else{
+            System.out.println("Not Found");
+        }
+    }
+}
