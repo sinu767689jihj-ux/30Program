@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class ConversionOfDecimalToBinary{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Decimal Number:");
+        int decimalNumber=sc.nextInt();
+        int binary=0;
+        int place=1;
+        while(decimalNumber>0)
+        {
+            int r=decimalNumber%2;
+            binary=binary+place*r;
+            place*=10;
+            decimalNumber/=2;
+        }
+        System.out.println("Binary is:"+binary);
+    }
+}
